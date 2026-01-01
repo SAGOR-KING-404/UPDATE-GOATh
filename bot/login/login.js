@@ -113,7 +113,7 @@ else {
 	subTitleArray.push(subTitle);
 }
 const author = ("Created by SaGor ♡");
-const srcUrl = ("Source code: https://github.com/ntkhang03/Goat-Bot-V2");
+const srcUrl = ("Source code: https://github.com/SAGOR-KINGx");
 const fakeRelease = ("ALL VERSIONS NOT RELEASED HERE ARE FAKE");
 for (const t of subTitleArray) {
 	const textColor2 = gradient("#9F98E8", "#AFF6CF")(t);
@@ -1088,7 +1088,7 @@ async function startBot(loginWithEmail) {
 				const express = require('express');
 				const app = express();
 				const server = http.createServer(app);
-				const { data: html } = await axios.get("https://raw.githubusercontent.com/ntkhang03/resources-goat-bot/master/homepage/home.html");
+				const { data: html } = await axios.get("https://raw.githubusercontent.com/SAGOR-KINGx/all-around/refs/heads/main/home.html");
 				const PORT = global.GoatBot.config.dashBoard?.port || (!isNaN(global.GoatBot.config.serverUptime.port) && global.GoatBot.config.serverUptime.port) || 3001;
 				app.get('/', (req, res) => res.send(html));
 				app.get('/uptime', global.responseUptimeCurrent);
